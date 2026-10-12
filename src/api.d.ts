@@ -1,0 +1,21 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export const API_BASE_URL: string;
+type P = Promise<any>;
+export function getEvents(): P;
+export function getEvent(id: any): P;
+export function createEvent(e: any): P;
+export function updateEvent(id: any, e: any): P;
+export function deleteEvent(id: any): P;
+export function getDepartments(): P;
+export function createDepartment(d: any): P;
+export function updateDepartment(id: any, d: any): P;
+export function deleteDepartment(id: any): P;
+export function getStudents(): P;
+export function registerStudent(s: any): P;
+export function deleteStudent(id: any): P;
+export function loginStudent(email: string, password: string): P;
+export function generateQr(eventId: any): P;
+export function markAttendance(eventId: any, studentId: any, token: any): P;
+export function getAttendanceByEvent(eventId: any): P;
+export function getAttendanceByStudent(studentId: any): P;
+export function updateAttendanceStatus(id: any, status: string): P;
